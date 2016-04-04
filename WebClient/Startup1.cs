@@ -2,19 +2,19 @@
 using System.Threading.Tasks;
 using Microsoft.Owin;
 using Owin;
+using System.Web.Http;
 
-[assembly: OwinStartup(typeof(WebClient.Startup1))]
+[assembly: OwinStartup(typeof(WebServer.Startup1))]
 
-namespace WebClient
+namespace WebServer
 {
     public class Startup1
     {
         public void Configuration(IAppBuilder app)
         {
-            app.Run(context =>
-            {
-                return context.Response.WriteAsync("WebServer with Templates is running");
-            });
+            HttpConfiguration httpConfiguration = new HttpConfiguration();
+            WebApiConfig.Register(httpConfiguration);
+            app.UseWebApi(httpConfiguration);
         }
     }
 }
