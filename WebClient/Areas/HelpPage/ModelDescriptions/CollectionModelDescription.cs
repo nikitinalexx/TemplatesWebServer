@@ -1,4 +1,4 @@
-namespace WebClient.Areas.HelpPage.ModelDescriptions
+namespace WebServer.Areas.HelpPage.ModelDescriptions
 {
     public class CollectionModelDescription : ModelDescription
     {

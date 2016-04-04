@@ -11,7 +11,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using WebServer.Models;
 
-namespace WebClient.Controllers
+namespace WebServer.Controllers
 {
     public class TemplateImplementationsController : ApiController
     {

@@ -1,4 +1,4 @@
-namespace WebClient.Migrations
+namespace WebServer.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
