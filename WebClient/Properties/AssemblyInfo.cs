@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("StartSoft")]
-[assembly: AssemblyProduct("WebClient")]
+[assembly: AssemblyProduct("WebServer")]
 [assembly: AssemblyCopyright("© StartSoft, 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
