@@ -15,13 +15,6 @@ namespace WebServer.Migrations
 
         protected override void Seed(WebServer.Models.WebServerContext context)
         {
-            Template t = new Template();
-            t.Name = "Template Name";
-            t.Purpose = "Template Purpose";
-            t.UmlImagePath = "Template Uml Path";
-            t.Description = "Template Description";
-            context.Templates.AddOrUpdate(t);
-
         }
     }
 }

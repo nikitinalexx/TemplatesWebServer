@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.OData;
 using WebServer.Models;
 
 namespace WebServer.Controllers
@@ -21,6 +22,12 @@ namespace WebServer.Controllers
         public IQueryable<Template> GetTemplates()
         {
             return db.Templates;
+        }
+
+        [EnableQuery]
+        public IQueryable<TemplateImplementation> GetTemplateImplementations([FromODataUri] int key)
+        {
+            return db.TemplateImplementations.Where(m => m.TemplateId.Equals(key));
         }
 
         // GET: api/Templates/5

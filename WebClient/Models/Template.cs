@@ -17,7 +17,7 @@ namespace WebServer.Models
         [Required]
         public String Purpose { get; set; }
         [Required]
-        public String UmlImagePath { get; set; }
+        public String UmlImage { get; set; }
         [Required]
         public String Description { get; set; }
     }

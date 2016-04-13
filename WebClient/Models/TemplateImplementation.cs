@@ -13,7 +13,7 @@ namespace WebServer.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
-        public String ImagePath { get; set; }
+        public String Image { get; set; }
 
         [ForeignKey("Template")]
         public int TemplateId { get; set; }

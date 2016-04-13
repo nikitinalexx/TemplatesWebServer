@@ -20,7 +20,7 @@ namespace WebServer.Controllers
         // GET: api/TemplateImplementations
         public IQueryable<TemplateImplementation> GetTemplateImplementations()
         {
-            return db.TemplateImplementations;
+            return db.TemplateImplementations.Include(b => b.Template);
         }
 
         // GET: api/TemplateImplementations/5
@@ -75,6 +75,7 @@ namespace WebServer.Controllers
         [ResponseType(typeof(TemplateImplementation))]
         public async Task<IHttpActionResult> PostTemplateImplementation(TemplateImplementation templateImplementation)
         {
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
